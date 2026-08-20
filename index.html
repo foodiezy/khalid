@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khalid & Asmau — Honeymoon Fund</title>
+<style>
+  :root{
+    --fern: #1F4B3F;
+    --fern-deep: #123128;
+    --sand: #E9DFC7;
+    --gold: #B98A3D;
+    --paper: #FBF8F1;
+    --ink: #1B2420;
+    --line: rgba(27,36,32,0.14);
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    margin:0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Iowan Old Style','Georgia','Times New Roman',serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap{
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+
+  .route{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 28px;
+  }
+  .route .dash{
+    width:36px;
+    height:1px;
+    background: var(--gold);
+    opacity:0.6;
+  }
+
+  h1{
+    font-size: clamp(26px, 6vw, 34px);
+    font-weight: 500;
+    text-align:center;
+    line-height:1.25;
+    margin: 0 0 18px;
+    color: var(--fern-deep);
+  }
+
+  .lede{
+    text-align:center;
+    font-size: 16px;
+    line-height:1.65;
+    color: var(--ink);
+    opacity:0.88;
+    max-width: 440px;
+    margin: 0 auto 40px;
+  }
+
+  .fernline{
+    display:block;
+    width:100%;
+    height:34px;
+    margin: 0 0 40px;
+    opacity:0.85;
+  }
+
+  .card{
+    background: var(--fern);
+    border-radius: 4px;
+    padding: 28px 26px;
+    margin-bottom: 18px;
+    position: relative;
+    overflow:hidden;
+  }
+  .card::before{
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0;
+    height:3px;
+    background: var(--gold);
+  }
+
+  .card-label{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--sand);
+    opacity:0.75;
+    margin: 0 0 14px;
+  }
+
+  .row{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.14);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  .row:last-child{ border-bottom: none; }
+
+  .row .k{
+    font-size: 13px;
+    color: var(--sand);
+    opacity: 0.7;
+  }
+  .row .v{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-align:right;
+  }
+
+  .copy-btn{
+    margin-top: 16px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.35);
+    color: var(--sand);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .copy-btn:hover{
+    background: rgba(255,255,255,0.08);
+  }
+  .copy-btn.copied{
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--fern-deep);
+  }
+
+  .footer{
+    text-align:center;
+    margin-top: 36px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    color: var(--ink);
+    opacity: 0.55;
+    line-height: 1.7;
+  }
+
+  .footer .names{
+    font-family: 'Iowan Old Style','Georgia',serif;
+    font-size: 17px;
+    color: var(--fern-deep);
+    opacity: 1;
+    margin-bottom: 4px;
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="route">
+      <span>Abuja</span>
+      <span class="dash"></span>
+      <span>Nairobi</span>
+    </div>
+
+    <h1>We're so grateful you're celebrating with us</h1>
+    <p class="lede">
+      If you'd like to contribute toward our honeymoon adventures in Kenya,
+      we've set up the details below — it takes just a minute, and it helps us
+      create amazing memories together.
+    </p>
+
+    <svg class="fernline" viewBox="0 0 500 34" preserveAspectRatio="none">
+      <path d="M0 17 C 100 4, 160 4, 250 17 C 340 30, 400 30, 500 17"
+            fill="none" stroke="#B98A3D" stroke-width="1.2" opacity="0.7"/>
+      <path d="M245 8 C 248 12, 248 22, 245 26 M245 8 C 235 11, 228 14, 222 17 M245 8 C 255 11, 262 14, 268 17 M245 12 C 237 15, 232 17, 227 19 M245 12 C 253 15, 258 17, 263 19"
+            fill="none" stroke="#1F4B3F" stroke-width="1" opacity="0.6" stroke-linecap="round"/>
+    </svg>
+
+    <div class="card">
+      <p class="card-label">Naira Transfer</p>
+      <div class="row"><span class="k">Bank</span><span class="v">TAJ Bank</span></div>
+      <div class="row"><span class="k">Account Name</span><span class="v">Khalid Shittu</span></div>
+      <div class="row"><span class="k">Account Number</span><span class="v">0009494094</span></div>
+      <button class="copy-btn" data-copy="0009494094">Copy Account Number</button>
+    </div>
+
+    <div class="card">
+      <p class="card-label">GBP Transfer</p>
+      <div class="row"><span class="k">Bank</span><span class="v">Barclays</span></div>
+      <div class="row"><span class="k">Account Name</span><span class="v">Khalid Shittu</span></div>
+      <div class="row"><span class="k">Sort Code</span><span class="v">20-12-80</span></div>
+      <div class="row"><span class="k">Account Number</span><span class="v">93814890</span></div>
+      <button class="copy-btn" data-copy="93814890">Copy Account Number</button>
+    </div>
+
+    <div class="footer">
+      <p class="names">Khalid &amp; Asmau</p>
+      <p>With love and gratitude.</p>
+    </div>
+  </div>
+
+<script>
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const text = btn.getAttribute('data-copy');
+      try{
+        await navigator.clipboard.writeText(text);
+      }catch(e){
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      const original = btn.textContent;
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.classList.remove('copied');
+      }, 1600);
+    });
+  });
+</script>
+</body>
+</html>
